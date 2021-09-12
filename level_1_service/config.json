@@ -1,0 +1,24 @@
+{
+    "sensors":[
+        {
+            "sensor_model": "WS-0001",
+            "handlers":[],
+            "outputs": ["Console"]
+        },
+        {
+            "sensor_model": "WS-0002",
+            "handlers":["padToMultiple"],
+            "outputs": ["Console"]
+        },
+        {
+            "sensor_model": "WS-0003",
+            "handlers":["trim","padToMultiple"],
+            "outputs": ["File"]
+        },
+        {
+            "sensor_model": "WS-0004",
+            "handlers":["trim","padToMultiple","addTimestamp"],
+            "outputs": ["Console", "File"]
+        }
+    ]
+}
